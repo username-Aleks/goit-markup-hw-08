@@ -1,0 +1,30 @@
+.footer-adress {
+  margin-right: 70px;
+}
+
+.adress {
+  color: $primary-white-color;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+}
+.adress__text {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+.adress__item {
+  margin-bottom: 10px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.adress__link {
+  color: $footer-adress-color;
+
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:focus,
+  &:hover {
+    color: $accent-tex-color;
+  }
+}

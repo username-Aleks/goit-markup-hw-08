@@ -1,0 +1,12 @@
+.portfolio-buttons {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 50px;
+}
+
+.portfolio-buttons__item {
+  & + & {
+    margin-left: 8px;
+  }
+}
