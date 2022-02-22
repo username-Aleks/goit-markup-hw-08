@@ -9,24 +9,38 @@ body {
 }
 
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  @include desktop {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   &--bcg {
     background-color: $secondary-background-color;
   }
   &--zeropadding {
     padding-top: 0px;
+    @media screen and (max-width: 1199.98px) {
+      display: none;
+    }
   }
 }
 .section__title {
   margin-top: 0;
-  margin-bottom: 50px;
+
+  margin-bottom: 30px;
 
   color: $secondary-tex-color;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.16;
+  font-size: 28px;
+  line-height: 1.17;
+
   text-align: center;
+  @include desktop {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
 }
 
 .container {
@@ -35,13 +49,15 @@ body {
   padding-right: 15px;
   margin-left: auto;
   margin-right: auto;
-  @media screen and (min-width: 480px) {
+
+  @include phone {
     width: 480px;
   }
-  @media screen and (min-width: 768px) {
+
+  @include tablet {
     width: 768px;
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     width: 1200px;
   }
 }

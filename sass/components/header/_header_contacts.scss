@@ -1,27 +1,25 @@
 .contacts {
-  @media screen and (max-width: 767px) {
+  @include tablet-breakpoint-fix {
     margin-top: auto;
   }
-  @media screen and (min-width: 768px) {
+  @include tablet {
     margin-left: auto;
   }
 
-  @media screen and (min-width: 1200px) {
-    // margin-left: 95px;
-
+  @include desktop {
     display: flex;
   }
 }
 
 .contacts__item {
   & + & {
-    @media screen and (max-width: 767.98px) {
+    @include tablet-breakpoint-fix {
       margin-top: 32px;
     }
-    @media screen and (min-width: 768px) {
+    @include tablet {
       margin-top: 10;
     }
-    @media screen and (min-width: 1200px) {
+    @include desktop {
       margin-left: 50px;
     }
   }
@@ -36,7 +34,7 @@
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  @media screen and (max-width: 438px) {
+  @include phone-S {
     font-size: 24px;
     line-height: 1.16;
     &--big {
@@ -53,7 +51,7 @@
       line-height: 1.17;
     }
   }
-  @media screen and (min-width: 1200px) {
+  @include desktop {
     padding-top: 32px;
     padding-bottom: 32px;
     font-size: 14px;
@@ -68,18 +66,18 @@
   margin-right: 10px;
   fill: currentColor;
 
-  @media screen and (max-width: 767.98px) {
+  @include tablet-breakpoint-fix {
     display: none;
   }
 }
 
 .social-link {
-  @media screen and (max-width: 767.98px) {
+  @include tablet-breakpoint-fix {
     display: flex;
     flex-wrap: wrap;
     margin-top: 64px;
   }
-  @media screen and (min-width: 768px) {
+  @include tablet {
     display: none;
   }
 }
