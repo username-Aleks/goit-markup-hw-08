@@ -69,6 +69,14 @@ body {
 }
 
 .footer__container {
-  display: flex;
-  align-items: baseline;
+  text-align: center;
+  @include tablet {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
+  }
+  @include desktop {
+    text-align: left;
+  }
 }

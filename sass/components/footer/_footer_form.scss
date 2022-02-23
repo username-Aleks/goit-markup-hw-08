@@ -1,3 +1,12 @@
+.footer-Mailing {
+  @include tablet {
+    width: 450px;
+  }
+  @include desktop {
+    width: 570px;
+    margin-left: auto;
+  }
+}
 .footer-label {
   margin-top: 0;
   margin-bottom: 20px;
@@ -9,27 +18,27 @@
   color: $primary-white-color;
 }
 
-.footer-Mailing {
-  width: 570px;
-  margin-left: auto;
-}
-
 .footer-form {
-  display: flex;
+  @include desktop {
+    display: flex;
+  }
 }
 .footer-form__input {
   padding: 15px 16px;
-  margin-right: 12px;
-  flex-basis: 100%;
+  margin-bottom: 20px;
+  width: 100%;
 
   line-height: 1.25;
   color: $footer-adress-color;
   background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
+  @include desktop {
+    margin-right: 12px;
+    margin-bottom: 0;
+  }
 
   &::placeholder {
-    line-height: 1.25;
     color: $footer-adress-color;
   }
 }
