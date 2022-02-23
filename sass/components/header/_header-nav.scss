@@ -14,6 +14,7 @@
     background-color: $primary-white-color;
 
     &.is-open {
+      z-index: 1;
       display: flex;
       flex-direction: column;
       justify-content: space-between;

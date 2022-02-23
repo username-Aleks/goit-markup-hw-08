@@ -3,6 +3,9 @@ body {
   background-color: $primary-white-color;
   color: $pimary-tex-color;
   letter-spacing: 0.03em;
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 .header {
   border-bottom: 1px solid #ececec;

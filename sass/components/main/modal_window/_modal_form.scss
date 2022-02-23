@@ -42,7 +42,7 @@
   position: absolute;
   top: 50%;
   left: 12px;
-  /* transform: translateY(-50%); */
+
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
   .form__input:focus ~ & {
@@ -78,12 +78,17 @@ textarea {
 }
 .form-checkbox {
   display: flex;
-  justify-content: space-evenly;
+  width: 100%;
+  // justify-content: space-evenly;
   align-items: center;
   margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 1.16;
 
-  font-size: 14px;
-  line-height: 1.71;
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.71;
+  }
 }
 .form-checkbox__input {
   position: absolute;
@@ -103,6 +108,7 @@ textarea {
   display: inline-block;
   width: 16px;
   height: 15px;
+  margin-right: 8px;
 
   border: 2px solid $primary-black-color;
   border-radius: 3px;
