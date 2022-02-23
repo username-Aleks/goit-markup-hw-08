@@ -809,13 +809,29 @@ body {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 50px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-top: -15px;
+  margin-left: -8px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .portfolio-buttons {
+    margin-bottom: 30px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .portfolio-buttons {
+    margin-bottom: 50px;
+  }
 }
 
-.portfolio-buttons__item + .portfolio-buttons__item {
+.portfolio-buttons__item {
+  margin-top: 15px;
   margin-left: 8px;
 }
 
